@@ -1,0 +1,6 @@
+framework module LCNavigator {
+  umbrella header "LCNavigator-umbrella.h"
+
+  export *
+  module * { export * }
+}

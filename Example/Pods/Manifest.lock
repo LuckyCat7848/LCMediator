@@ -1,0 +1,29 @@
+PODS:
+  - LCMediator (0.1.0):
+    - LCNavigator
+  - LCNavigator (0.2.0):
+    - YYKit
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - LCMediator (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - LCNavigator
+    - YYKit
+
+EXTERNAL SOURCES:
+  LCMediator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LCMediator: 128183349d65d36643e0b9c8929111fce8c28c28
+  LCNavigator: a637cde4f89fde9f411eb758b4e79d514e9f9347
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 574eed4b278185bf7596c71ef751d1a437ee49c4
+
+COCOAPODS: 1.6.1
