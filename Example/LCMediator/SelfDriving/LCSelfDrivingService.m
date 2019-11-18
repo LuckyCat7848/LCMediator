@@ -14,16 +14,11 @@
 
 - (void)lcMediator_step1:(NSDictionary *)params {
     [LCNavigator push:@"LCSelfStep1ViewController" extraParams:params];
-    
-    kLCMediatorFinalCompletion(params, @(YES), nil);
 }
 
 - (LCSelfStep1View *)lcMediator_step1View:(NSDictionary *)params {
     LCSelfStep1View *view = [[LCSelfStep1View alloc] init];
     view.cityName = params[@"cityName"];
-
-    kLCMediatorFinalCompletion(params, view, nil);
-
     return view;
 }
 

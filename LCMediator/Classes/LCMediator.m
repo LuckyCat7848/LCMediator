@@ -154,14 +154,26 @@ static LCMediator *_instance = nil;
     [[self sharedInstance] cachedTarget][targetName] = target;
     
     if ([target respondsToSelector:action]) {
-        [[self sharedInstance] _safePerformTarget:target action:action params:compParams];
+        // 直接找到对应方法,直接调用,结束后直接回调
+        id object = [[self sharedInstance] _safePerformTarget:target action:action params:compParams];
+        if (completion) {
+            if (object) {
+                completion(object, nil);
+            } else {
+                completion(@(YES), nil);
+            }
+        }
     } else {
         SEL noParamsAction = [[self sharedInstance] _noParamsActionWithName:actionName];
         if ([target respondsToSelector:noParamsAction]) {
             // 尝试调用对应action无参数方法,结束后直接回调
-            [[self sharedInstance] _safePerformTarget:target action:noParamsAction params:params];
+            id object = [[self sharedInstance] _safePerformTarget:target action:noParamsAction params:params];
             if (completion) {
-                completion(@(YES), nil);
+                if (object) {
+                    completion(object, nil);
+                } else {
+                    completion(@(YES), nil);
+                }
             }
         } else if ([target respondsToSelector:[[self sharedInstance] _actionWithName:notFoundSelName]]) {
             // 尝试调用对应target的notFound方法统一处理
