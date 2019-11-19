@@ -1,24 +1,10 @@
 # LCMediator
 
-[![CI Status](https://img.shields.io/travis/LuckyCat7848/LCMediator.svg?style=flat)](https://travis-ci.org/LuckyCat7848/LCMediator)
-[![Version](https://img.shields.io/cocoapods/v/LCMediator.svg?style=flat)](https://cocoapods.org/pods/LCMediator)
-[![License](https://img.shields.io/cocoapods/l/LCMediator.svg?style=flat)](https://cocoapods.org/pods/LCMediator)
-[![Platform](https://img.shields.io/cocoapods/p/LCMediator.svg?style=flat)](https://cocoapods.org/pods/LCMediator)
+## 相关博客
 
-## Example
+- [iOS组件化（一）中间件设计方案](https://github.com/LuckyCat7848/Blogs/blob/master/posts/iOS%E7%BB%84%E4%BB%B6%E5%8C%96%EF%BC%88%E4%B8%80%EF%BC%89%E4%B8%AD%E9%97%B4%E4%BB%B6%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88.md)
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
-
-## Installation
-
-LCMediator is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'LCMediator'
-```
+- [iOS组件化（二）模块生命周期独立化](https://github.com/LuckyCat7848/Blogs/blob/master/posts/iOS%E7%BB%84%E4%BB%B6%E5%8C%96%EF%BC%88%E4%BA%8C%EF%BC%89%E6%A8%A1%E5%9D%97%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%8B%AC%E7%AB%8B%E5%8C%96.md)
 
 ## Author
 
